@@ -1,0 +1,324 @@
+<div class="page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVC0Mrz25bwm3BmmgymPiupXehkviBr_efEdAwy3IUnHJpvDO6ZuMOAzU&s=10" alt="1">
+      </div>
+      <div>
+        <strong>Colegio Mayor del Claret</strong>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#colegio">Colegio</a>
+      <a href="#planos">Planos</a>
+      <a href="#ubicacion">Ubicación</a>
+    </div>
+
+    <a href="#ubicacion" class="nav-button">Ver ubicación</a>
+  </nav>
+
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <span class="tag">COLEGIO MAYOR DEL CLARET</span>
+
+      <h1>
+        Conoce nuestro
+        <span>colegio</span>
+      </h1>
+
+      <p>
+        Explora nuestras instalaciones, consulta los planos
+        del colegio y encuentra nuestra ubicación en Bogotá.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#planos" class="main-button">
+          Explorar planos
+        </a>
+
+        <a href="#ubicacion" class="secondary-button">
+          Nuestra ubicación
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INFORMACIÓN -->
+  <section id="colegio" class="information">
+
+    <div class="section-title">
+
+      <span class="tag dark">
+        NUESTRA INSTITUCIÓN
+      </span>
+
+      <h2>
+        Un espacio para
+        <span>aprender y crecer</span>
+      </h2>
+
+    </div>
+
+    <div class="information-text">
+
+      <p>
+        El Colegio Mayor del Claret es una institución educativa
+        ubicada en Bogotá D.C., comprometida con la formación
+        integral de sus estudiantes.
+      </p>
+
+      <p>
+        En este sitio podrás consultar información relacionada
+        con las instalaciones del colegio, visualizar sus planos
+        y conocer su ubicación.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PLANOS -->
+  <section id="planos" class="plans">
+
+    <div class="plans-header">
+
+      <div>
+        <span class="tag dark">
+          INSTALACIONES
+        </span>
+
+        <h2>
+          Planos del
+          <span>colegio</span>
+        </h2>
+      </div>
+
+      <p>
+        Agrega aquí los planos de las diferentes
+        instalaciones y pisos del colegio.
+      </p>
+
+    </div>
+
+
+    <!-- SUBIR PLANOS -->
+    <div class="upload-container">
+
+      <label for="fileInput" class="upload-box">
+
+        <div class="upload-icon">
+          +
+        </div>
+
+        <h3>
+          Agregar planos
+        </h3>
+
+        <p>
+          Haz clic para seleccionar imágenes o PDF
+        </p>
+
+        <span>
+          JPG · PNG · WEBP · PDF
+        </span>
+
+      </label>
+
+      <input
+        type="file"
+        id="fileInput"
+        multiple
+        accept="image/*,.pdf"
+      >
+
+    </div>
+
+
+    <!-- GALERÍA -->
+    <div id="plansGallery" class="plans-gallery">
+
+      <div class="plan-card">
+
+        <div class="plan-placeholder">
+          <span>PLANO 01</span>
+        </div>
+
+        <div class="plan-info">
+          <h3>Plano general</h3>
+
+          <p>
+            Agrega aquí el plano general
+            del Colegio Mayor del Claret.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="plan-card">
+
+        <div class="plan-placeholder">
+          <span>PLANO 02</span>
+        </div>
+
+        <div class="plan-info">
+
+          <h3>Primer piso</h3>
+
+          <p>
+            Agrega aquí el plano correspondiente
+            al primer piso.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="plan-card">
+
+        <div class="plan-placeholder">
+          <span>PLANO 03</span>
+        </div>
+
+        <div class="plan-info">
+
+          <h3>Tercer piso</h3>
+
+          <p>
+            Agrega aquí el plano correspondiente
+            al tercer piso.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="location">
+
+    <div class="location-container">
+
+      <div class="location-information">
+
+        <span class="tag">
+          UBICACIÓN
+        </span>
+
+        <h2>
+          Encuéntranos
+          <span>en Bogotá</span>
+        </h2>
+
+        <p class="address">
+
+           Diagonal 45A sur No. 27-41
+          <br>
+          Bogotá D.C., Colombia
+
+        </p>
+
+
+        <div class="location-card">
+
+        
+
+          <div>
+
+            <strong>
+              Colegio Mayor del Claret
+            </strong>
+
+            <p id="status">
+              Consultando ubicación...
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <a
+          class="maps-button"
+          href="https://www.google.com/maps/search/?api=1&query=Colegio+Mayor+del+Claret%2C+Diagonal+45A+sur+No.+27-41%2C+Bogot%C3%A1"
+          target="_blank"
+        >
+          Abrir en Google Maps →
+        </a>
+
+      </div>
+
+
+      <!-- MAPA -->
+      <div class="map-container">
+
+        <div id="map">
+
+          <div class="map-content">
+
+           
+
+            <h3>
+              Colegio Mayor del Claret
+            </h3>
+
+            <p>
+              Diagonal 45A sur No. 27-41
+            </p>
+
+            <button onclick="openMaps()">
+              Ver en Google Maps
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+ 
+  <footer>
+
+    <div>
+
+      <strong>
+        Colegio Mayor del Claret
+      </strong>
+
+      <p>
+        Diagonal 45A sur No. 27-41 · Bogotá D.C.
+      </p>
+
+    </div>
+
+    <p>
+      © 2026 Colegio Mayor del Claret
+    </p>
+
+  </footer>
+
+</div>
