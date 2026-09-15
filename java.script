@@ -1,0 +1,148 @@
+/* ==========================================
+   PLANOS
+========================================== */
+
+const fileInput =
+  document.getElementById("fileInput");
+
+const plansGallery =
+  document.getElementById("plansGallery");
+
+
+fileInput.addEventListener(
+  "change",
+  function(event) {
+
+    const files =
+      Array.from(event.target.files);
+
+
+    files.forEach(function(file) {
+
+      const card =
+        document.createElement("div");
+
+      card.className =
+        "plan-card";
+
+
+      const info =
+        document.createElement("div");
+
+      info.className =
+        "plan-info";
+
+
+      const title =
+        document.createElement("h3");
+
+      title.textContent =
+        file.name;
+
+
+      const description =
+        document.createElement("p");
+
+      description.textContent =
+        "Plano agregado al sitio.";
+
+
+      info.appendChild(title);
+      info.appendChild(description);
+
+
+      /* PDF */
+
+      if (
+        file.type ===
+        "application/pdf"
+      ) {
+
+        const iframe =
+          document.createElement("iframe");
+
+        iframe.src =
+          URL.createObjectURL(file);
+
+        iframe.title =
+          file.name;
+
+        card.appendChild(iframe);
+
+      }
+
+
+      /* IMAGEN */
+
+      else if (
+        file.type.startsWith("image/")
+      ) {
+
+        const image =
+          document.createElement("img");
+
+        image.src =
+          URL.createObjectURL(file);
+
+        image.alt =
+          "Plano del Colegio Mayor del Claret";
+
+        card.appendChild(image);
+
+      }
+
+
+      card.appendChild(info);
+
+
+      /*
+        Ponemos el nuevo plano
+        al principio de la galería.
+      */
+
+      plansGallery.prepend(card);
+
+    });
+
+  }
+);
+
+
+/* ==========================================
+   GOOGLE MAPS
+========================================== */
+
+function openMaps() {
+
+  const address =
+    "Colegio Mayor del Claret, " +
+    "Diagonal 45A sur No. 27-41, " +
+    "Bogotá D.C.";
+
+  const url =
+    "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent(address);
+
+  window.open(
+    url,
+    "_blank"
+  );
+
+}
+
+async function consultarUbicacion() {
+
+  const status =
+    document.getElementById("status");
+
+
+  status.textContent =
+    "Ubicación: Diagonal 45A sur No. 27-41, Bogotá D.C.";
+
+
+}
+
+
+/* Ejecutar */
+
+consultarUbicacion();
